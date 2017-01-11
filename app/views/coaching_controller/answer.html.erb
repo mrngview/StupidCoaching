@@ -1,11 +1,19 @@
-<div >
-  <h3>- You</h3>
-  <h2><%= @query %></h2>
+<div class="container">
+  <div class="card text-center">
+    <h3>- You</h3>
+    <h2 class="answer"><%= @query %></h2>
+  </div>
 </div>
 
-<div>
-  <h3>- Coach</h3>
-  <h2><%= @answer %></h2>
+<div class="container">
+  <div class="card text-center">
+    <h3>- Coach</h3>
+    <h2 class="answer"><%= @answer %></h2>
+  </div>
 </div>
 
-<%= link_to "Ask another question", ask_path %>
+<div class="container">
+  <div class="card text-center">
+  <%= link_to "Ask another question", ask_path %>
+  </div>
+</div>
